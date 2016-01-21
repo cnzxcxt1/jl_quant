@@ -16,3 +16,7 @@ Pkg.add("QuantEcon")
 ##### 在创建完之后，如果我继续在修改呢
 
 I have really add some changes
+
+and if the changes are made in other computer
+
+I change this in hp computer
