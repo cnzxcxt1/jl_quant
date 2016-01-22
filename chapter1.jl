@@ -105,3 +105,44 @@ function pi_simulatation(n)
   return pi
 end
 pi_simulatation(1000000)
+
+
+### 2.4
+
+function Flip_coin()
+  updown=Array(Int64,10);
+  for i in 1:10
+    updown[i]=int(rand()>0.5);
+  end
+  println(updown)
+  for j in 1:8
+    if sum(updown[j:(j+2)])==3
+           println("pay")
+      break
+    end
+  end
+end
+
+Flip_coin()
+
+
+### 2.5
+
+function generate_ts(n,alpha)
+  epsilons=randn(n)
+  xt=randn(n);
+  xt[1]=epsilons[1];
+  for i in 2:n
+    xt[i]=alpha*xt[i-1]+epsilons[i];
+  end
+  return xt
+end
+
+ts1=generate_ts(200,0.9)
+plot(ts1)
+
+### 2.6
+
+a=generate_ts(300,0.0)
+b=generate_ts(300,0.8)
+c=generate_ts(300,0.98)
