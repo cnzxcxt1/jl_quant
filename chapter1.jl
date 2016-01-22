@@ -62,7 +62,7 @@ plot_histogram(lp, 500)
 
 ### Exercise
 
-### 2.1
+### 1.2.1
 
 function factorial2(n)
   produit=1;
@@ -76,7 +76,7 @@ end
 factorial2(10)
 factorial(10)
 
-### 2.2
+### 1.2.2
 function binomial_rv(n,p)
   count=0;
   for i in 1:n
@@ -89,7 +89,7 @@ end
 
 binomial_rv(100,0.5)
 
-### 2.3
+### 1.2.3
 
 function pi_simulatation(n)
   r1=rand(n);
@@ -107,7 +107,7 @@ end
 pi_simulatation(1000000)
 
 
-### 2.4
+### 1.2.4
 
 function Flip_coin()
   updown=Array(Int64,10);
@@ -126,7 +126,7 @@ end
 Flip_coin()
 
 
-### 2.5
+### 1.2.5
 
 function generate_ts(n,alpha)
   epsilons=randn(n)
@@ -141,7 +141,7 @@ end
 ts1=generate_ts(200,0.9)
 plot(ts1)
 
-### 2.6
+### 1.2.6
 
 a=generate_ts(300,0.0)
 b=generate_ts(300,0.8)
